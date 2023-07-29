@@ -10,7 +10,7 @@ Como **reverve proxy** usare **Nginx**, debido a que usare **Certbot**, me gusta
 - **BackEnd:** Usare **Django** porque me ofrece una estructura facil de seguir y basicamente tengo que practicar con el .
 Usare **Gunicorn** como **WSGI** and **Nginx** como **Reverse Proxy**.
 
-- **FrontEnd:** Usare **Bulma** como CSS3 Framework, ya que no tiene dependencias en javascript. ~~pero quizas use uno mas completo con **javacript** capacidades como **Bootstrap**.~~
+- **FrontEnd:** Usare **Bulma** como CSS3 Framework, ya que no tiene dependencias en javascript.
 
 ## Notas:
 Tengo que traducir esto
