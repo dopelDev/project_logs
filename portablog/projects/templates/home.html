@@ -6,13 +6,27 @@
 	<header>
 		{% include 'includes/header.html' %}
 	</header>
-	<body>
-	<h1 class="title is-1">Home</h1>
-	<h2 class="subtitle is-2">Welcome to our website!</h2>
-	<h3 class="subtitle is-3">This is a subtitle</h3>
-	<h4 class="subtitle is-4">This is a subtitle</h4>
-	<h5 class="subtitle is-5">This is a subtitle</h5>
-	</body>
-	<footer>
+	<body class="grid-container">
+		<h1 class="title is-1 grid-item">Home</h1>
+		<h2 class="subtitle grid-item is-1">Welcome to our website!</h2>
+		<h3 class="subtitle grid-item is-1">This is a subtitle</h3>
+		<h4 class="subtitle grid-item is-1">This is a subtitle</h4>
+		<h5 class="subtitle grid-item is-1">This is a subtitle</h5>
+	<footer class="grid-item">
 		{% include 'includes/footer.html' %}
 	</footer>
+
+	</body>
+
+	<style>
+/* CSS */
+.grid-container {
+	display: grid;
+	grid-template-rows: 0fr 1fr 1fr 2fr 3fr 1fr;
+	grid-template-columns: 1fr;
+}
+	.grid-item {
+		background-color: #000000;
+		padding: 60px;
+	}
+	</style>
