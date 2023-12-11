@@ -2,5 +2,11 @@
   "dependencies": {
     "bulma": "^0.9.4",
     "sass": "^1.69.5"
-  }
+  },
+	"name": "portafolio",
+	"version": "0.0.1",
+	"description": "Portafolio de proyectos",
+	"scripts": {
+		"compile:sass": "sass portablog/projects/static/sass/main.sass portablog/projects/static/css/style.css"
+	}
 }
