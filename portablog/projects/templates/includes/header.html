@@ -1,53 +1,70 @@
-<div class="container" id="desktop">
-	<section class="section color5">
-		<nav class="navbar" role="navigation" aria-label="main navigation">
-			<!--			<Logo">-->
+<!-- Desktop -->
+<section class="section" id="desktop">
+	<div class="columns">
+		<!--			<Logo">-->
+		<div class="column is-2">
 			<div class="container">
-				<div class="navbar-brand">
-					{% load static %}
-					<div class="container" href="#">
-						<figure class="image is-128x128">
-							{% load static %}
-							<img src="{% static 'img/logo.png' %}">
-						</figure>
-					</div>
-				</div>
+				<a href="#">
+					<figure class="image is-128x128">
+						{% load static %}
+						<img class="is-rounded" src="{% static 'img/logo.png' %}">
+					</figure>
+				</a>
 			</div>
-			<!--			</Logo>-->
-			<!--			<Navbar Menu>-->
-			<div class="container">
+		</div>
+		<!--			</Logo>-->
+		<!--			<Navbar Menu>-->
+		<div class="column is-8">
+			<section class="section">
 				<div class="columns">
-
-				</div>
-			</div>
-			<!--			</Navbar Menu>-->
-			<!--			<Navbar End>-->
-			<div class="container">
-				<div class="navbar-end">
-					<div class="navbar-item">
-						<div class="buttons">
-							<a class="button color3 has-text-white">
-								<strong>Sign up</strong>
-							</a>
-							<a class="button is-light">
-								Log in
-							</a>
-						</div>
+					<div class="column hover-color-change">
+						<a href="#">
+							<h1 class="title has-text-centered">
+								Projects
+							</h1>
+						</a>
+					</div>
+					<div class="column hover-color-change">
+						<a href="#">
+							<h1 class="title has-text-centered">
+								About me
+							</h1>
+						</a>
+					</div>
+					<div class="column hover-color-change">
+						<a href="#">
+							<h1 class="title has-text-centered">
+								Contact
+							</h1>
+						</a>
 					</div>
 				</div>
-			</div>
-			<!--			</Navbar End>-->
-		</nav>
-	</section>
-</div>
+			</section>
+		</div>
+		<!--			</Navbar Menu>-->
+		<!--			<Navbar End>-->
+		<div class="column is-2">
+			<section class="section">
+				<div class="buttons">
+					<a class="button color3 has-text-white">
+						<strong>Sign up</strong>
+					</a>
+					<a class="button is-light">
+						Log in
+					</a>
+				</div>
+			</section>
+		</div>
+		<!--			</Navbar End>-->
+	</div>
+</section>
+<!-- End Desktop -->
 <!-- Mobile -->
-<div class="container" id="mobile">
-	<section class="section">
-		<figure class="image">
-			{% load static %}
-			<img src="{% static 'img/logo.png' %}">
-		</figure>
-	</section>
-</div>
+<section class="section" id="mobile">
+	<figure class="image is-square">
+		{% load static %}
+		<img class="is-rounded" src="{% static 'img/logo.png' %}">
+	</figure>
+</section>
 <!-- End Mobile -->
 

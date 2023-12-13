@@ -10320,5 +10320,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     display: block;
   }
 }
+.hover-color-change {
+  background-color: #365f7a;
+  transition: background-color 0.3s ease-in-out, color 0.1s ease-in-out;
+}
+.hover-color-change:hover {
+  background-color: #cacabc;
+}
 
 /*# sourceMappingURL=style.css.map */

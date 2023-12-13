@@ -6,6 +6,9 @@ $color3: #3c4550
 $color4: #cacabc
 $color5: #285270
 
+$red: #e74c3c
+$green: #2ecc71 
+
 .color1
   background-color: $color1
 .color2
@@ -43,7 +46,12 @@ $mobile-max: 1024px
   #mobile 
     display: block
   
-
+// button
+.hover-color-change
+  background-color:$color2
+  transition: background-color 0.3s ease-in-out, color 0.1s ease-in-out
+  &:hover
+    background-color:$color4
 
 
 
