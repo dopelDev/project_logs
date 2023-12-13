@@ -1,1 +1,50 @@
 @import '../../../../node_modules/bulma/bulma'
+
+$color1: #224b69
+$color2: #365f7a
+$color3: #3c4550
+$color4: #cacabc
+$color5: #285270
+
+.color1
+  background-color: $color1
+.color2
+  background-color: $color2
+.color3
+  background-color: $color3
+.color4
+  background-color: $color4
+.color5
+  background-color: $color5
+
+// Definir breakpoints
+$desktop: 1024px // Puedes ajustar este valor según tus necesidades
+
+// Estilos por defecto para mobile y tablet
+#desktop
+  display: none
+
+
+// Media query para pantallas de escritorio
+@media screen and (min-width: $desktop)
+  #desktop
+    display: block
+
+// Definir breakpoints
+$mobile-max: 1024px
+
+// Estilos para pantallas mayores a 1024px
+#mobile 
+  display: none
+
+
+// Media query para pantallas menores o iguales a 1024px
+@media screen and (max-width: $mobile-max) 
+  #mobile 
+    display: block
+  
+
+
+
+
+

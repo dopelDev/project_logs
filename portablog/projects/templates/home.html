@@ -3,30 +3,27 @@
 	<head>
 		{% include 'includes/head.html' %}
 	</head>
-	<header>
+	<header class="color1">
 		{% include 'includes/header.html' %}
 	</header>
-	<body class="grid-container">
-		<h1 class="title is-1 grid-item">Home</h1>
-		<h2 class="subtitle grid-item is-1">Welcome to our website!</h2>
-		<h3 class="subtitle grid-item is-1">This is a subtitle</h3>
-		<h4 class="subtitle grid-item is-1">This is a subtitle</h4>
-		<h5 class="subtitle grid-item is-1">This is a subtitle</h5>
-	<footer class="grid-item">
-		{% include 'includes/footer.html' %}
-	</footer>
-
+	<body>
+		<section class="section is-blue">
+			<article class="message is-primary">
+				<div class="message-header">
+					<p>Primary</p>
+					<button class="delete" aria-label="delete"></button>
+				</div>
+				<div class="message-body">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>.
+				</div>
+			</article>
+			<h1 class="title is-1 grid-item">Home</h1>
+			<h2 class="subtitle grid-item is-1">Welcome to our website!</h2>
+			<h3 class="subtitle grid-item is-1">This is a subtitle</h3>
+			<h4 class="subtitle grid-item is-1">This is a subtitle</h4>
+			<h5 class="subtitle grid-item is-1">This is a subtitle</h5>
+		</section>
+		<footer class="grid-item">
+			{% include 'includes/footer.html' %}
+		</footer>
 	</body>
-
-	<style>
-/* CSS */
-.grid-container {
-	display: grid;
-	grid-template-rows: 0fr 1fr 1fr 2fr 3fr 1fr;
-	grid-template-columns: 1fr;
-}
-	.grid-item {
-		background-color: #000000;
-		padding: 60px;
-	}
-	</style>

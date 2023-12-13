@@ -10282,4 +10282,43 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
+.color1 {
+  background-color: #224b69;
+}
+
+.color2 {
+  background-color: #365f7a;
+}
+
+.color3 {
+  background-color: #3c4550;
+}
+
+.color4 {
+  background-color: #cacabc;
+}
+
+.color5 {
+  background-color: #285270;
+}
+
+#desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  #desktop {
+    display: block;
+  }
+}
+#mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  #mobile {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

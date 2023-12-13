@@ -1,48 +1,53 @@
-<nav class="navbar is-dark is-spaced" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-			<a class="navbar-item" href="https://bulma.io">
-				<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-			</a>
-		<a class="navbar-item is-hidden-desktop" href="#">
-			Documentation
-			</a>
-		<a class="navbar-item is-hidden-desktop" href="#">
-			Projects
-			</a>
-		<a class="navbar-item is-hidden-desktop" href="#">
-			Github
-			</a>
-		<a class="navbar-item is-hidden-desktop" href="#">
-			About
-			</a>
-		</div>
-		<div id="navbarBasicExample" class="navbar-menu">
-			<div class="navbar-start">
-				<a class="navbar-item" href="#">
-					Documentation
-				</a>
-				<a class="navbar-item" href="#">
-					Projects
-				</a>
-				<a class="navbar-item" href="#">
-					Github
-				</a>
-				<a class="navbar-item" href="#">
-					About
-				</a>
-			</div>
-			<div class="navbar-end">
-				<div class="navbar-item">
-					<div class="buttons">
-						<a class="button is-black">
-							<strong>Sign up</strong>
-						</a>
-						<a class="button is-light">
-							Log in
-						</a>
+<div class="container" id="desktop">
+	<section class="section color5">
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<!--			<Logo">-->
+			<div class="container">
+				<div class="navbar-brand">
+					{% load static %}
+					<div class="container" href="#">
+						<figure class="image is-128x128">
+							{% load static %}
+							<img src="{% static 'img/logo.png' %}">
+						</figure>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</nav>
+			<!--			</Logo>-->
+			<!--			<Navbar Menu>-->
+			<div class="container">
+				<div class="columns">
+
+				</div>
+			</div>
+			<!--			</Navbar Menu>-->
+			<!--			<Navbar End>-->
+			<div class="container">
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							<a class="button color3 has-text-white">
+								<strong>Sign up</strong>
+							</a>
+							<a class="button is-light">
+								Log in
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--			</Navbar End>-->
+		</nav>
+	</section>
+</div>
+<!-- Mobile -->
+<div class="container" id="mobile">
+	<section class="section">
+		<figure class="image">
+			{% load static %}
+			<img src="{% static 'img/logo.png' %}">
+		</figure>
+	</section>
+</div>
+<!-- End Mobile -->
+
