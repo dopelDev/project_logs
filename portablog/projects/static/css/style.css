@@ -10328,4 +10328,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #cacabc;
 }
 
+.pattern-with-svg {
+  background-color: #224b69;
+  background-image: url("/static/img/circuit-board.svg");
+  background-size: 600px 600px;
+  background-repeat: repeat;
+}
+
 /*# sourceMappingURL=style.css.map */

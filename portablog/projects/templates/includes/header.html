@@ -1,16 +1,18 @@
 <!-- Desktop -->
-<section class="section" id="desktop">
+<div class="container is-fluid" id="desktop">
 	<div class="columns">
 		<!--			<Logo">-->
 		<div class="column is-2">
-			<div class="container">
-				<a href="#">
-					<figure class="image is-128x128">
-						{% load static %}
-						<img class="is-rounded" src="{% static 'img/logo.png' %}">
-					</figure>
-				</a>
-			</div>
+			<section class="hero is-small">
+				<section class="hero-body">
+					<a href="#">
+						<figure class="image is-96x96 is-rounded">
+							{% load static %}
+							<img class="is-rounded" src="{% static 'img/logo-small.webp' %}">
+						</figure>
+					</a>
+				</section>
+			</section>
 		</div>
 		<!--			</Logo>-->
 		<!--			<Navbar Menu>-->
@@ -19,21 +21,21 @@
 				<div class="columns">
 					<div class="column hover-color-change">
 						<a href="#">
-							<h1 class="title has-text-centered">
+							<h1 class="title is-6 has-text-centered">
 								Projects
 							</h1>
 						</a>
 					</div>
 					<div class="column hover-color-change">
 						<a href="#">
-							<h1 class="title has-text-centered">
+							<h1 class="title is-6 has-text-centered">
 								About me
 							</h1>
 						</a>
 					</div>
 					<div class="column hover-color-change">
 						<a href="#">
-							<h1 class="title has-text-centered">
+							<h1 class="title is-6 has-text-centered">
 								Contact
 							</h1>
 						</a>
@@ -57,14 +59,33 @@
 		</div>
 		<!--			</Navbar End>-->
 	</div>
-</section>
+</div>
 <!-- End Desktop -->
 <!-- Mobile -->
-<section class="section" id="mobile">
-	<figure class="image is-square">
-		{% load static %}
-		<img class="is-rounded" src="{% static 'img/logo.png' %}">
-	</figure>
-</section>
+<div class="container" id="mobile">
+	<div  class="columns color1">
+		<!--			<Logo>-->
+		<div class="column">
+			<section class="section">
+				<a href="#">
+					<figure class="image is-128x128">
+						{% load static %}
+						<img src="{% static 'img/logo-small.webp' %}">
+					</figure>
+				</a>
+			</section>
+		</div>
+		<!--			</Logo>-->
+		<!--			<Navbar mid>-->
+		<div class="column">
+			<div class="navbar-burger burger" data-target="navMenu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+</div>
+<!--			</Navbar mid>-->
 <!-- End Mobile -->
 
