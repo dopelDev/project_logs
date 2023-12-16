@@ -65,23 +65,47 @@
 <div class="container" id="mobile">
 	<div  class="columns color1">
 		<!--			<Logo>-->
-		<div class="column">
+		<div class="column is-1">
 			<section class="section">
-				<a href="#">
-					<figure class="image is-128x128">
-						{% load static %}
-						<img src="{% static 'img/logo-small.webp' %}">
-					</figure>
-				</a>
+				{% load static %}
+
+				<!-- Botón para activar el sidebar -->
+				<button id="sidebarToggle" class="button" aria-haspopup="true" aria-controls="mySidebar"></button>
+
+				<!-- Sidebar -->
+				<div id="mySidebar" class="menu">
+					<!-- Contenido del sidebar -->
+					<p class="menu-label">Menú</p>
+					<ul class="menu-list">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Opción 1</a></li>
+						<!-- Más opciones aquí -->
+					</ul>
+					<button id="closeSidebar" class="button">Cerrar</button>
+				</div>
+
+				<!-- Resto del contenido de la página -->
+				<div id="mainContent">
+					<!-- Contenido principal aquí -->
+				</div>
+
 			</section>
 		</div>
 		<!--			</Logo>-->
 		<!--			<Navbar mid>-->
 		<div class="column">
-			<div class="navbar-burger burger" data-target="navMenu">
-				<span></span>
-				<span></span>
-				<span></span>
+			<div class="container">
+				<section class="hero">
+					<div class="hero-body">
+						<div class="hero">
+							<div class="hero-body">
+								<a href="#">
+									<p class="title is-1 has-text-centered">TEXT VALUE</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 	</div>

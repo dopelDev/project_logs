@@ -58,3 +58,43 @@ $mobile-max: 1024px
   background-size: 600px 600px
   background-repeat: repeat
 
+#sidebarToggle
+  background-image: url('/static/img/logo-small.webp')
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: center
+  width: 128px
+  height: 128px
+  border: none
+  padding: 0
+
+#mySidebar
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 1
+  top: 0
+  right: 0
+  background-color: #111
+  overflow-x: hidden
+  transition: 0.5s
+  padding-top: 60px
+
+  .menu-label
+    color: white
+    padding: 8px 8px 8px 32px
+
+  .menu-list
+    a
+      padding: 8px 8px 8px 32px
+      text-decoration: none
+      font-size: 25px
+      color: #818181
+      display: block
+      transition: 0.3s
+
+      &:hover
+        color: #f1f1f1
+
+#mySidebar.open
+  width: 80% 

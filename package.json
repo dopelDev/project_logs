@@ -1,12 +1,22 @@
 {
   "dependencies": {
     "bulma": "^0.9.4",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "vue": "^3.2.36"
   },
-	"name": "portafolio",
-	"version": "0.0.1",
-	"description": "Portafolio de proyectos",
-	"scripts": {
-		"compile:sass": "sass portablog/projects/static/sass/main.sass portablog/projects/static/css/style.css"
-	}
+  "name": "portafolio",
+  "version": "0.0.1",
+  "description": "Portafolio de proyectos",
+  "scripts": {
+    "compile:sass": "sass portablog/projects/static/sass/main.sass portablog/projects/static/css/style.css",
+    "build": "webpack --config webpack.config.js",
+    "build:all": "npm run compile:sass && npm run build"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^2.7.6",
+    "vue-loader": "^17.3.1",
+    "vue-template-compiler": "^2.7.15",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
