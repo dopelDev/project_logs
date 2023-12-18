@@ -5,13 +5,15 @@ Sera un porta-blog para poder no solo, publicar mis proyectos, sino tambien darl
 Como **reverve proxy** usare **Nginx**, debido a que usare **Certbot**, me gustaria un script que no solo, actualice el certificado, sino que me informe del esta actual del certificado. Para la base de datos, usare **Postgres**, en produccion y en desarrollo.
 
 ## Technical details
-- **Environment:** Docker @ Gnu/Linux Debian 12 Bookworm
+"I am utilizing a hybrid development approach that combines Python (Django) with compiled JavaScript to manage Vue.js components in a unified manner. The process begins with the development of individual Vue components, each encapsulated in its own .vue file. These components are not directly related to each other, allowing for modular and flexible design.
 
-- **BackEnd:** Usare **Django** porque me ofrece una estructura facil de seguir y basicamente tengo que practicar con el .
-Usare **Gunicorn** como **WSGI** and **Nginx** como **Reverse Proxy**.
+Using Webpack, I compile these individual Vue components into a single, unified JavaScript file. This setup streamlines the integration of Vue into my Django project by reducing the number of script requests and optimizing loading times on the client side.
 
-- **FrontEnd:** Usare **Bulma** como CSS3 Framework, ya que no tiene dependencias en javascript. No quiero usar SASS. No quiero complicarme mas.
+In my Django templates, I include this compiled JavaScript bundle, ensuring that all Vue components are readily available. The components are mounted to specific elements in the Django/Jinja2 templates, allowing for the selective enhancement of parts of the webpage with Vue's reactivity and interactivity, while the rest of the page remains managed by Django's server-side rendering.
 
+This approach effectively marries the robust back-end capabilities of Django with the dynamic front-end features of Vue.js, maintaining a clear separation of concerns and optimizing web performance."
+
+This summary encapsulates your approach, highlighting the key aspects of using Python and Django for back-end management, Vue.js for dynamic front-end components, and Webpack for compiling and bundling the JavaScript in a way that optimizes web performance and maintainability.
 ## Notas:
 Tengo que traducir esto
 
