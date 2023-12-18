@@ -57,44 +57,19 @@ $mobile-max: 1024px
   background-image: url('/static/img/circuit-board.svg')
   background-size: 600px 600px
   background-repeat: repeat
+.menu-button 
+  /* Estilos para tu botón de menú (imagen) */
+  cursor: pointer
 
-#sidebarToggle
-  background-image: url('/static/img/logo-small.webp')
-  background-size: contain
-  background-repeat: no-repeat
-  background-position: center
-  width: 128px
-  height: 128px
-  border: none
-  padding: 0
 
-#mySidebar
-  height: 100%
-  width: 0
-  position: fixed
-  z-index: 1
-  top: 0
-  right: 0
-  background-color: #111
-  overflow-x: hidden
-  transition: 0.5s
-  padding-top: 60px
+.menu-container 
+  /* Estilos iniciales para tu menú lateral (oculto) */
+  transform: translateX(-100%)
+  transition: transform 0.3s ease
 
-  .menu-label
-    color: white
-    padding: 8px 8px 8px 32px
 
-  .menu-list
-    a
-      padding: 8px 8px 8px 32px
-      text-decoration: none
-      font-size: 25px
-      color: #818181
-      display: block
-      transition: 0.3s
+.menu-container.is-active 
+  /* Estilos para el menú cuando está activo (visible) */
+  transform: translateX(0)
 
-      &:hover
-        color: #f1f1f1
 
-#mySidebar.open
-  width: 80% 

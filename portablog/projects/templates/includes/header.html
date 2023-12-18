@@ -63,33 +63,11 @@
 <!-- End Desktop -->
 <!-- Mobile -->
 <div class="container" id="mobile">
-	<div  class="columns color1">
+	<div  class="columns color1" id="lateral-menu">
 		<!--			<Logo>-->
-		<div class="column is-1">
-			<section class="section">
-				{% load static %}
-
-				<!-- Botón para activar el sidebar -->
-				<button id="sidebarToggle" class="button" aria-haspopup="true" aria-controls="mySidebar"></button>
-
-				<!-- Sidebar -->
-				<div id="mySidebar" class="menu">
-					<!-- Contenido del sidebar -->
-					<p class="menu-label">Menú</p>
-					<ul class="menu-list">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Opción 1</a></li>
-						<!-- Más opciones aquí -->
-					</ul>
-					<button id="closeSidebar" class="button">Cerrar</button>
-				</div>
-
-				<!-- Resto del contenido de la página -->
-				<div id="mainContent">
-					<!-- Contenido principal aquí -->
-				</div>
-
-			</section>
+		<div class="column is-3">
+			{% load static %}
+			<div class="hero is-large" id="lateral-menu"></div>
 		</div>
 		<!--			</Logo>-->
 		<!--			<Navbar mid>-->

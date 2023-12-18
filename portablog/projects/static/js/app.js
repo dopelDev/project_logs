@@ -1,5 +1,4 @@
 import { createApp } from 'vue';
-import App from './App.vue';
+import LateralMenu from './components/lateral-menu.vue';
 
-createApp(App).mount('#app');
-
+createApp(LateralMenu).mount('#lateral-menu');

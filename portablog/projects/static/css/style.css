@@ -10335,47 +10335,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-repeat: repeat;
 }
 
-#sidebarToggle {
-  background-image: url("/static/img/logo-small.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 128px;
-  height: 128px;
-  border: none;
-  padding: 0;
+.menu-button {
+  /* Estilos para tu botón de menú (imagen) */
+  cursor: pointer;
 }
 
-#mySidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-#mySidebar .menu-label {
-  color: white;
-  padding: 8px 8px 8px 32px;
-}
-#mySidebar .menu-list a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-#mySidebar .menu-list a:hover {
-  color: #f1f1f1;
+.menu-container {
+  /* Estilos iniciales para tu menú lateral (oculto) */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
-#mySidebar.open {
-  width: 80%;
+.menu-container.is-active {
+  /* Estilos para el menú cuando está activo (visible) */
+  transform: translateX(0);
 }
 
 /*# sourceMappingURL=style.css.map */
