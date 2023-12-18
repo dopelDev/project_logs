@@ -12,8 +12,6 @@ Using Webpack, I compile these individual Vue components into a single, unified 
 In my Django templates, I include this compiled JavaScript bundle, ensuring that all Vue components are readily available. The components are mounted to specific elements in the Django/Jinja2 templates, allowing for the selective enhancement of parts of the webpage with Vue's reactivity and interactivity, while the rest of the page remains managed by Django's server-side rendering.
 
 This approach effectively marries the robust back-end capabilities of Django with the dynamic front-end features of Vue.js, maintaining a clear separation of concerns and optimizing web performance."
-
-This summary encapsulates your approach, highlighting the key aspects of using Python and Django for back-end management, Vue.js for dynamic front-end components, and Webpack for compiling and bundling the JavaScript in a way that optimizes web performance and maintainability.
 ## Notas:
 Tengo que traducir esto
 
