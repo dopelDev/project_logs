@@ -7,8 +7,8 @@
   "version": "0.0.1",
   "description": "Portafolio de proyectos",
   "scripts": {
-    "compile:sass": "sass portablog/projects/static/sass/main.sass portablog/projects/static/css/style.css",
-    "build": "webpack --config webpack.config.js",
+    "compile:sass": "sass --watch portablog/projects/static/sass/main.sass portablog/projects/static/css/style.css",
+    "build": "webpack --watch --config webpack.config.js",
     "build:all": "npm run compile:sass && npm run build"
   },
   "devDependencies": {
