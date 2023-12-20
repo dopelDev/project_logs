@@ -10302,6 +10302,26 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #285270;
 }
 
+.text-color1 {
+  color: #224b69;
+}
+
+.text-color2 {
+  color: #365f7a;
+}
+
+.text-color3 {
+  color: #3c4550;
+}
+
+.text-color4 {
+  color: #cacabc;
+}
+
+.text-color5 {
+  color: #285270;
+}
+
 #desktop {
   display: none;
 }
@@ -10331,7 +10351,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .pattern-with-svg {
   background-color: #224b69;
   background-image: url("/static/img/circuit-board.svg");
-  background-size: 600px 600px;
+  background-size: 248px 248px;
   background-repeat: repeat;
 }
 
@@ -10349,6 +10369,29 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .menu-container.is-active {
   /* Estilos para el menú cuando está activo (visible) */
   transform: translateX(0);
+}
+
+.box {
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+/* Nerd Fonts */
+@font-face {
+  font-family: "MartianMonoNerdFont";
+  src: url("/static/fonts/MartianMonoNerdFont-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.MartianMonoNerdFont {
+  font-family: "MartianMonoNerdFont", monospace;
+}
+
+/* Icons */
+.icon-large {
+  font-size: 15rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */

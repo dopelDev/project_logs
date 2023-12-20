@@ -1,4 +1,4 @@
 import { createApp } from 'vue';
-import LateralMenu from './components/lateral-menu.vue';
+import LateralMenu from './components/header-mobile.vue';
 
-createApp(LateralMenu).mount('#lateral-menu');
+createApp(LateralMenu).mount('#header-mobile');
