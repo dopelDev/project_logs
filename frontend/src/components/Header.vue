@@ -1,86 +1,91 @@
 <template>
-	<div class="container">
-		<nav class="columns color1" v-show="!menuActive">
-			<div class="column is-1">
-				<!-- Botón para abrir el menú -->
-				<section class="section">
-					<figure class="image is-128x128">
-						<img src=""
-								 @click="toggleMenu"
-								 class="menu-button is-rounded"
-								 alt="Menu">
-					</figure>
-				</section>
-			</div>
-			<div class="column is-9">
-				<section class="section">
-					<div class="box hover-color-change menu-button" @click="toggleMenu">
-						<h1 class="title is-1 MartianMonoNerdFont has-text-centered text-color3">Dopeldev</h1>
-					</div>
-				</section>
-			</div>
-		</nav>
-		<!-- Menú lateral -->
-		<div class="level-right menu-container"
-				 v-bind:class="{ 'is-active': menuActive }">
-			<!-- Contenido del menú -->
-			<div class="container">
-				<!-- main tile -->
-				<div class="columns is-desktop color4">
-					<!-- First Widget -->
-					<div class="column">
-						<section class="section">
-							<h1 class="icon-large MartianMonoNerdFont has-text-centered text-color1">󰙃</h1>
-							<p class="title is-1 MartianMonoNerdFont has-text-centered text-color1">About</p>
-							<p class="subtitle is-3 MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
+	<body>
+		<header>
+			<!-- Desktop -->
+			<div class="container is-fluid color1" id="desktop">
+				<div class="columns">
+					<!--			<Logo">-->
+					<div class="column is-2">
+						<section class="hero is-small">
+							<section class="hero-body">
+								<a href="#">
+									<figure class="image is-96x96 is-rounded">
+										<img class="is-rounded" :src="logoSrc">
+									</figure>
+								</a>
+							</section>
 						</section>
 					</div>
-					<!-- Second Widget -->
-					<div class="column">
+					<!--			</Logo>-->
+					<!--			<Navbar Menu>-->
+					<div class="column is-8">
 						<section class="section">
-							<h1 class="icon-large MartianMonoNerdFont has-text-centered text-color1"></h1>
-							<p class="title is-1 MartianMonoNerdFont has-text-centered text-color1">Projects</p>
-							<p class="subtitle is-3 MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
-						</section>
-					</div>
-					<!-- Third Widget -->
-					<div class="column">
-						<section class="section">
-							<h1 class="icon-large MartianMonoNerdFont has-text-centered text-color1">󰶍</h1>
-							<p class="title is-1 MartianMonoNerdFont has-text-centered text-color1">Contact</p>
-							<p class="subtitle is-3 MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
-						</section>
-					</div>
-					<!-- Close button -->
-					<div class="column">
-						<section class="section hover-color-change menu-button" @click="toggleMenu">
-							<div class="hero">
-								<h1 class="title is-1 MartianMonoNerdFont has-text-centered text-color3">Close 󰅘</h1>
+							<div class="columns">
+								<div class="column hover-color-change">
+									<a href="#">
+										<h1 class="title is-5 MartianMonoNerdFont has-text-centered text-color3">
+											 Projects
+										</h1>
+									</a>
+								</div>
+								<div class="column hover-color-change">
+									<a href="#">
+										<h1 class="title is-5 MartianMonoNerdFont has-text-centered text-color3">
+											󰙃 About
+										</h1>
+									</a>
+								</div>
+								<div class="column hover-color-change">
+									<a href="#">
+										<h1 class="title is-5 MartianMonoNerdFont has-text-centered text-color3">
+											󰶍 Contact
+										</h1>
+									</a>
+								</div>
 							</div>
 						</section>
 					</div>
+					<!--			</Navbar Menu>-->
+					<!--			<Navbar End>-->
+					<div class="column is-2">
+						<section class="section">
+							<div class="buttons">
+								<a class="button color3 has-text-white">
+									<strong>Sign up</strong>
+								</a>
+								<a class="button is-light">
+									Log in
+								</a>
+							</div>
+						</section>
+					</div>
+					<!--			</Navbar End>-->
 				</div>
-				<!-- Botón para cerrar el menú -->
 			</div>
-		</div>
-	</div>
+			<!-- End Desktop -->
+			<!-- Mobile -->
+			<div class="container" id="mobile">
+				<div  class="columns" id="header-mobile">
+				</div>
+			</div>
+			<!--			</Navbar mid>-->
+			<!-- End Mobile -->
+		</header>
+	</body>
 </template>
 
 <script>
+	import myLogo from '@/assets/images/logo.png'
 	export default {
-		name: 'Header',
 		data() {
 			return {
-				menuActive: false
-			};
-		},
-		methods: {
-			toggleMenu() {
-				this.menuActive = !this.menuActive;
+				logoSrc: myLogo,
 			}
-		}
+		},
+
 	}
 </script>
 
 <style>
+
 </style>
