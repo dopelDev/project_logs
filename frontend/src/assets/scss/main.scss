@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import "~bulma/bulma";
+
+$color1: #224b69;
+$color2: #365f7a;
+$color3: #3c4550;
+$color4: #cacabc;
+$color5: #285270;
+
+.color1 {
+  background-color: $color1;
+}
+.color2 {
+  background-color: $color2;
+}
+.color3 {
+  background-color: $color3;
+}
+.color4 {
+  background-color: $color4;
+}
+.color5 {
+  background-color: $color5;
+}
+
+.text-color1 {
+  color: $color1;
+}
+.text-color2 {
+  color: $color2;
+}
+.text-color3 {
+  color: $color3;
+}
+.text-color4 {
+  color: $color4;
+}
+.text-color5 {
+  color: $color5;
+}
+
+// Definir breakpoints
+$desktop: 1024px; // Puedes ajustar este valor según tus necesidades
+
+// Estilos por defecto para mobile y tablet
+#desktop {
+  display: none;
+}
+
+// Media query para pantallas de escritorio
+@media screen and (min-width: $desktop) {
+  #desktop {
+    display: block;
+  }
+}
+
+// Definir breakpoints
+$mobile-max: 1024px;
+
+// Estilos para pantallas mayores a 1024px
+#mobile {
+  display: none;
+}
+
+// Media query para pantallas menores o iguales a 1024px
+@media screen and (max-width: $mobile-max) {
+  #mobile {
+    display: block;
+  }
+}
+  
+// button
+.hover-color-change {
+  background-color: $color2;
+  transition: background-color 0.3s ease-in-out, color 0.1s ease-in-out;
+  
+  &:hover {
+    background-color: $color4;
+  }
+}
+
+.pattern-with-svg {
+  background-color: $color1;
+  background-image: url('~Assets/images/circuit-board.svg'); // Ajusta la ruta si es necesario
+  background-size: 248px 248px;    
+  background-repeat: repeat;
+}
+
+.menu-button {
+  /* Estilos para tu botón de menú (imagen) */
+  cursor: pointer;
+}
+ 
+.menu-container {
+  /* Estilos iniciales para tu menú lateral (oculto) */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+ 
+.menu-container.is-active {
+  /* Estilos para el menú cuando está activo (visible) */
+  transform: translateX(0);
+}
+
+.box {
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+/* Nerd Fonts */
+
+@font-face {
+  font-family: 'MartianMonoNerdFont';
+  src: url('~Assets/fonts/MartianMonoNerdFont-Regular.woff2') format('woff2'); // Ajusta la ruta si es necesario
+  font-weight: normal;
+  font-style: normal;
+}
+.MartianMonoNerdFont {
+  font-family: 'MartianMonoNerdFont', monospace;
+}
+
+/* Icons */
+.icon-large {
+  font-size: 15rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
