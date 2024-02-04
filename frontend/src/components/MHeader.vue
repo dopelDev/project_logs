@@ -4,7 +4,7 @@
 			<div class="column is-1">
 				<!-- Botón para abrir el menú -->
 				<section class="section">
-					<figure class="image is-64x64">
+					<figure class="image is-48x48">
 						<img :src="logoSrc"
 									@click="toggleMenu"
 									class="menu-button is-rounded"
@@ -20,47 +20,48 @@
 		</div>
 	</div>
 	<!-- Menú lateral -->
-	<div class="level-right menu-container"
-			 v-bind:class="{ 'is-active': menuActive }">
+	<div class="menu-container" v-bind:class="{ 'is-active': menuActive }">
 		<!-- Contenido del menú -->
-		<div class="container">
-			<!-- main tile -->
-			<div class="columns is-desktop color4">
-				<!-- First Widget -->
-				<div class="column">
-					<section class="section">
-						<h1 class="icon-large MartianMonoNerdFont has-text-centered text-color1">󰙃</h1>
-						<p class="title is-3 MartianMonoNerdFont has-text-centered text-color1">About</p>
-						<p class="subtitle is-5 MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
-					</section>
-				</div>
-				<!-- Second Widget -->
-				<div class="column">
-					<section class="section">
-						<h1 class="icon-large MartianMonoNerdFont has-text-centered text-color1"></h1>
-						<p class="title is-3 MartianMonoNerdFont has-text-centered text-color1">Projects</p>
-						<p class="subtitle is-5 MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
-					</section>
-				</div>
-				<!-- Third Widget -->
-				<div class="column">
-					<section class="section">
-						<h1 class="icon-large MartianMonoNerdFont has-text-centered text-color1">󰶍</h1>
-						<p class="title is-3 MartianMonoNerdFont has-text-centered text-color1">Contact</p>
-						<p class="subtitle is-5 MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
-					</section>
-				</div>
-				<!-- Close button -->
-				<div class="column">
-					<section class="section hover-color-change menu-button" @click="toggleMenu">
-						<div class="hero">
-							<h1 class="title is-1 MartianMonoNerdFont has-text-centered text-color3">Close 󰅘</h1>
-						</div>
-					</section>
-				</div>
+		<!-- main tile -->
+		<div class="columns color4">
+			<!-- First Widget -->
+			<div class="column is-mobile">
+				<section class="hero is-small">
+					<div class="hero-body">
+						<h1 class="icon-custom MartianMonoNerdFont has-text-centered text-color1">󰙃</h1>
+						<h1 class="title is-6 MartianMonoNerdFont has-text-centered text-color1">About</h1>
+						<div class="content is-small MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</div>
+					</div>
+				</section>
 			</div>
-			<!-- Botón para cerrar el menú -->
+			<!-- Second Widget -->
+			<div class="column auto">
+				<section class="hero is-small">
+					<div class="hero-body">
+						<h1 class="icon-custom MartianMonoNerdFont has-text-centered text-color1"></h1>
+						<p class="title is-6 MartianMonoNerdFont has-text-centered text-color1">Projects</p>
+						<p class="content is-small MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
+					</div>
+				</section>
+			</div>
+			<!-- Third Widget -->
+			<div class="column auto">
+				<section class="hero is-small">
+					<div class="hero-body">
+						<h1 class="icon-custom MartianMonoNerdFont has-text-centered text-color1">󰶍</h1>
+						<p class="title is-6 MartianMonoNerdFont has-text-centered text-color1">Contact</p>
+						<p class="content is-small MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
+					</div>
+				</section>
+			</div>
+			<!-- Close button -->
+			<div class="column auto">
+				<section class="section hover-color-change menu-button" @click="toggleMenu">
+					<h1 class="title is-5 MartianMonoNerdFont has-text-centered text-color3">Close 󰅘</h1>
+				</section>
+			</div>
 		</div>
+		<!-- Botón para cerrar el menú -->
 	</div>
 </template>
 
@@ -84,6 +85,7 @@
 
 <style lang="scss">
 #fix-padding {
-	padding: 25px 0;
+	padding: 15px 0;
+	margin-left: -6%;
 }
 </style>

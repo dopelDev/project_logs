@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Esto establece la base del directorio a la raíz de tu proyecto
+    "paths": {
+      "@/*": ["frontend/src/*"] // Suponiendo que tienes una carpeta 'src', esto permite importaciones como '@/components/MyComponent'
+    },
+    "target": "esnext", // Puedes cambiar esto dependiendo de tu entorno de destino, por ejemplo, es6, es2015, etc.
+    "module": "es6", // Sistema de módulos, es6 es común para proyectos basados en Vue.js
+    "allowSyntheticDefaultImports": true, // Permite importaciones por defecto desde módulos sin un export por defecto
+    "esModuleInterop": true, // Habilita la interoperabilidad del módulo ES para permitir la compilación de CommonJS/AMD/UMD
+    "experimentalDecorators": true, // Habilita el soporte para decoradores experimentales, que son utilizados por Vue para componentes de clase
+    "jsx": "preserve" // Opciones relevantes si estás usando JSX/TSX
+  },
+  "exclude": ["node_modules", "dist"] // Excluye directorios del procesamiento del compilador
+}
+
