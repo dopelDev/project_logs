@@ -14,7 +14,7 @@
 			</div>
 			<div class="column is-9" id="fix-padding">
 				<div class="box hover-color-change menu-button" @click="toggleMenu">
-					<h1 class="title is-5 MartianMonoNerdFont has-text-centered text-color3">Dopeldev</h1>
+					<h1 class="title is-5 has-text-centered text-color3">Dopeldev</h1>
 				</div>
 			</div>
 		</div>
@@ -28,9 +28,9 @@
 			<div class="column is-mobile">
 				<section class="hero is-small">
 					<div class="hero-body">
-						<h1 class="icon-custom MartianMonoNerdFont has-text-centered text-color1">󰙃</h1>
-						<h1 class="title is-6 MartianMonoNerdFont has-text-centered text-color1">About</h1>
-						<div class="content is-small MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</div>
+						<h1 class="icon-custom has-text-centered text-color1">󰙃</h1>
+						<h1 class="title is-6 has-text-centered text-color1">About</h1>
+						<div class="content is-small has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</div>
 					</div>
 				</section>
 			</div>
@@ -38,9 +38,9 @@
 			<div class="column auto">
 				<section class="hero is-small">
 					<div class="hero-body">
-						<h1 class="icon-custom MartianMonoNerdFont has-text-centered text-color1"></h1>
-						<p class="title is-6 MartianMonoNerdFont has-text-centered text-color1">Projects</p>
-						<p class="content is-small MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
+						<h1 class="icon-custom has-text-centered text-color1"></h1>
+						<p class="title is-6 has-text-centered text-color1">Projects</p>
+						<p class="content is-small has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
 					</div>
 				</section>
 			</div>
@@ -48,16 +48,16 @@
 			<div class="column auto">
 				<section class="hero is-small">
 					<div class="hero-body">
-						<h1 class="icon-custom MartianMonoNerdFont has-text-centered text-color1">󰶍</h1>
-						<p class="title is-6 MartianMonoNerdFont has-text-centered text-color1">Contact</p>
-						<p class="content is-small MartianMonoNerdFont has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
+						<h1 class="icon-custom has-text-centered text-color1">󰶍</h1>
+						<p class="title is-6 has-text-centered text-color1">Contact</p>
+						<p class="content is-small has-text-centered text-color3">Para definir colores personalizados para el texto en SASS y utilizarlos en tu proyecto Vue</p>
 					</div>
 				</section>
 			</div>
 			<!-- Close button -->
 			<div class="column auto">
 				<section class="section hover-color-change menu-button" @click="toggleMenu">
-					<h1 class="title is-5 MartianMonoNerdFont has-text-centered text-color3">Close 󰅘</h1>
+					<h1 class="title is-5 has-text-centered text-color3">Close 󰅘</h1>
 				</section>
 			</div>
 		</div>
@@ -87,5 +87,12 @@
 #fix-padding {
 	padding: 15px 0;
 	margin-left: -6%;
+}
+.box {
+  margin-left: 100px;
+  margin-top: 40px;
+}
+* {
+	font-family: 'MartianMonoNerdFont', sans-serif
 }
 </style>

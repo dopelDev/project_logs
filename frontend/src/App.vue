@@ -2,7 +2,8 @@
 	<div id="app">
 		<Header v-if="isDesktop" />
 		<MHeader v-else />
-		<Body />
+		<Body v-if="isDesktop" />
+		<MBody v-else />
 	</div>
 </template>
 
@@ -11,12 +12,14 @@
 	import Header from './components/Header.vue';
 	import MHeader from './components/MHeader.vue';
 	import Body from './components/Body.vue';
+	import MBody from './components/MBody.vue';
 	export default {
 		name: 'App',
 		components: {
 			Header,
 			MHeader,
 			Body,
+			MBody,
 		},
 		setup() {
 			const isDesktop = ref(window.innerWidth > 800);
